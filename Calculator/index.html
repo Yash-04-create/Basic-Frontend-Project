@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="/Calculator/index.css">
+</head>
+<body>
+
+        <div class="calculator">
+            <input type="text" class="display" readonly>
+                <div class="button_container">
+                    <button class="buttons" onclick="n=n+1;
+                    document.querySelector('.display').value=n;">1</button>
+                    <button class="buttons" onclick="n=n+2;
+                    document.querySelector('.display').value=n;">2</button>
+                    <button class="buttons" onclick="n=n+3;
+                    document.querySelector('.display').value=n;">3</button>
+                    <button class="buttons" onclick="n=n+'+';
+                    document.querySelector('.display').value=n;">+</button>
+                    <button class="buttons" onclick="n=n+4;
+                    document.querySelector('.display').value=n;">4</button>
+                    <button class="buttons" onclick="n=n+5;
+                    document.querySelector('.display').value=n;">5</button>
+                    <button class="buttons" onclick="n=n+6;
+                    document.querySelector('.display').value=n;">6</button>
+                    <button class="buttons" onclick="n=n+'-';
+                    document.querySelector('.display').value=n;">-</button>
+                    <button class="buttons" onclick="n=n+7;
+                    document.querySelector('.display').value=n;">7</button>
+                    <button class="buttons" onclick="n=n+8;
+                    document.querySelector('.display').value=n;">8</button>
+                    <button class="buttons" onclick="n=n+9;
+                    document.querySelector('.display').value=n;">9</button>
+                    <button class="buttons" onclick="n=n+'*';
+                    document.querySelector('.display').value=n;">*</button>
+                    <button class="buttons" onclick="n='';
+                    document.querySelector('.display').value=n;">C</button>
+                    <button class="buttons" onclick="n=n+0;
+                    document.querySelector('.display').value=n;">0</button>
+                    <button class="buttons" onclick="n=eval(n);
+                    document.querySelector('.display').value=n;
+                    ">=</button>
+                    <button class="buttons" onclick="n=n+'/';
+                    document.querySelector('.display').value=n;">/</button>
+                </div>
+        </div>
+    <script>
+       let n='';
+       document.querySelector('.display').value=n;
+    </script>
+</body>
+
+</html>

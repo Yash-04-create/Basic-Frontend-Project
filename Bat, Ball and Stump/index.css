@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: rgb(15, 15, 15);
+}
+
+.buttons{
+    margin: 4px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
