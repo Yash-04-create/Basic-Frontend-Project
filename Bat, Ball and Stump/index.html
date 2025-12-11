@@ -49,7 +49,6 @@
     </div>    
 
     <script>
-
         let gameSrc=localStorage.getItem('Game Stat');
         let gameStats;
         if(gameSrc!=undefined){
@@ -62,10 +61,10 @@
             tie:0,
             };
         };
-
+        getresult();
         function getresult(computer,usermove,result){
                 localStorage.setItem('Game Stat',JSON.stringify(gameStats));
-                document.querySelector('#b1-place').innerText = usermove1=undefined ? `User Choice is ${usermove}`: '';
+                document.querySelector('#b1-place').innerText = usermove!=undefined ? `User Choice is ${usermove}`: '';
                 document.querySelector('#b2-place').innerText = computer!=undefined ? `Computer Choice is ${computer}` : '';
                 document.querySelector('#b3-place').innerText = result!=undefined ? result : '';
                 document.querySelector('#b4-place').innerText = `Score: Win : ${gameStats.win}, Lost : ${gameStats.lose}, Tie: ${gameStats.tie}`
